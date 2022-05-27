@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  name: `A noob's blog`,
+  domain: 'localhost',
   author: 'Ankur Paul',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Not so noob, kinda blogs 🧠',
 
   // social usernames (optional)
   twitter: 'ankurpauldotdev',
