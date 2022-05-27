@@ -7,18 +7,18 @@ import 'react-notion-x/src/styles.css'
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
 
+// global style overrides for notion
+import 'styles/notion.css'
+
+// global style overrides for prism theme (optional)
+import 'styles/prism-theme.css'
+
 // used for code syntax highlighting (optional)
 // import 'prismjs/themes/prism-coy.css'
 
 // this might be better for dark mode
 import '../styles/prism-night-owl.css'
 // import 'prismjs/themes/prism-tomorrow.css'
-
-// global style overrides for notion
-import 'styles/notion.css'
-
-// global style overrides for prism theme (optional)
-import 'styles/prism-theme.css'
 
 import * as React from 'react'
 import * as Fathom from 'fathom-client'
