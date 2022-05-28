@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: `A noob's blog`,
-  domain: 'localhost',
+  domain: 'https://nooobcoder-blog.vercel.app/',
   author: 'Ankur Paul',
 
   // open graph metadata (optional)
@@ -20,6 +20,8 @@ export default siteConfig({
   twitter: 'ankurpauldotdev',
   github: 'nooobcoder',
   linkedin: 'ankur-paul-888b4411b',
+  isSearchEnabled: true,
+  isTweetEmbedSupportEnabled: true,
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -54,9 +56,5 @@ export default siteConfig({
       title: 'About',
       pageId: '264a3bda6a4548748f8e472131ae9dc6'
     },
-    {
-      title: 'Contact',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-    }
   ]
 })
