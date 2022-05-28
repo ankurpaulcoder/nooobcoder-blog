@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: `A noob's blog`,
-  domain: 'https://nooobcoder-blog.vercel.app/',
+  domain: 'nooobcoder-blog.vercel.app',
   author: 'Ankur Paul',
 
   // open graph metadata (optional)
