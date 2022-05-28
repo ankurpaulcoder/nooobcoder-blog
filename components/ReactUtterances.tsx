@@ -1,3 +1,4 @@
+// Commit: https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/a83a5a64d9e83e27d62e5b974ffeafa20daf5473
 import React from 'react'
 
 import styles from './styles.module.css'
