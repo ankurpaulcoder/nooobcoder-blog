@@ -18,6 +18,7 @@ import 'styles/prism-theme.css'
 
 // this might be better for dark mode
 import '../styles/prism-night-owl.css'
+// import '../styles/prism-shades-of-purple.css'
 // import 'prismjs/themes/prism-tomorrow.css'
 
 import * as React from 'react'
