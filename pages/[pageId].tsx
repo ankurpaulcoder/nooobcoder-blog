@@ -4,7 +4,10 @@ import { getSiteMap } from 'lib/get-site-map'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
 import { NotionPage } from 'components'
 
-export const getStaticProps = async (context) => {
+import type { GetStaticProps } from "next"
+import type {PageProps, Params} from "lib/types"
+
+export const getStaticProps: GetStaticProps<PageProps, Params> = async (context) => {
   const rawPageId = context.params.pageId as string
 
   try {
