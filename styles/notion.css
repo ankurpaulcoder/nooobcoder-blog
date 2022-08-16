@@ -367,6 +367,10 @@
   border-image-slice: 1;
 }
 
+.dark-mode .notion-search .searchBar .searchInput {
+  color: var(--fg-color);
+}
+
 .notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
   padding: 0;
 }
