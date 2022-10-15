@@ -6,7 +6,7 @@
  */
 
 import { parsePageId } from 'notion-utils'
-import posthog from 'posthog-js'
+import type posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
 import {
@@ -124,11 +124,15 @@ export const isServer = typeof window === 'undefined'
 
 export const port = getEnv('PORT', '3000')
 export const host = isDev ? `http://localhost:${port}` : `https://${domain}`
+export const apiHost = isDev
+  ? host
+  : `https://${process.env.VERCEL_URL || domain}`
 
 export const apiBaseUrl = `/api`
 
 export const api = {
   searchNotion: `${apiBaseUrl}/search-notion`,
+  getNotionPageInfo: `${apiBaseUrl}/notion-page-info`,
   getSocialImage: `${apiBaseUrl}/social-image`
 }
 
@@ -145,8 +149,8 @@ export const site: Site = {
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
-      excludedDomains: ['localhost', 'localhost:3000']
-    }
+    excludedDomains: ['localhost', 'localhost:3000']
+  }
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID

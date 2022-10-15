@@ -37,3 +37,8 @@ body {
 .utterances {
   max-width: 100% !important;
 }
+
+.searchInput {
+  color: var(--fg-color);
+  caret-color: var(--fg-color);
+}
