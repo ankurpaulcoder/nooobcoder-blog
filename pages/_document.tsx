@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
+
 import { IconContext } from '@react-icons/all-files'
 
 export default class MyDocument extends Document {
@@ -8,14 +9,14 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <link rel='shortcut icon' href='/favicon.png' />
+            <link rel='shortcut icon' href='/favicon.ico' />
             <link
               rel='icon'
               type='image/png'
               sizes='32x32'
               href='favicon.png'
             />
-            <meta name="google-site-verification" content="akZbc0rnfmG4jrR2tT3rR6Jr2Kck5N8eLRqdSBVbXUU" />
+
             <link rel='manifest' href='/manifest.json' />
           </Head>
 

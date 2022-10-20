@@ -4,15 +4,15 @@
  * This file pulls from the root "site.config.ts" as well as environment variables
  * for optional depenencies.
  */
-
 import { parsePageId } from 'notion-utils'
 import type posthog from 'posthog-js'
+
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
 import {
+  NavigationStyle,
   PageUrlOverridesInverseMap,
   PageUrlOverridesMap,
-  NavigationStyle,
   Site
 } from './types'
 
@@ -56,7 +56,9 @@ export const language: string = getSiteConfig('language', 'en')
 // social accounts
 export const twitter: string | null = getSiteConfig('twitter', null)
 export const github: string | null = getSiteConfig('github', null)
+export const youtube: string | null = getSiteConfig('youtube', null)
 export const linkedin: string | null = getSiteConfig('linkedin', null)
+export const newsletter: string | null = getSiteConfig('newsletter', null)
 export const zhihu: string | null = getSiteConfig('zhihu', null)
 
 // default notion values for site-wide consistency (optional; may be overridden on a per-page basis)
@@ -149,8 +151,8 @@ export const site: Site = {
 export const fathomId = isDev ? null : process.env.NEXT_PUBLIC_FATHOM_ID
 export const fathomConfig = fathomId
   ? {
-    excludedDomains: ['localhost', 'localhost:3000']
-  }
+      excludedDomains: ['localhost', 'localhost:3000']
+    }
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID
