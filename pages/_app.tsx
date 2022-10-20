@@ -19,6 +19,14 @@ import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
 
+// used for code syntax highlighting (optional)
+// import 'prismjs/themes/prism-coy.css'
+
+// this might be better for dark mode
+import '../styles/prism-night-owl.css'
+// import '../styles/prism-shades-of-purple.css'
+// import 'prismjs/themes/prism-tomorrow.css'
+
 import { bootstrap } from '@/lib/bootstrap-client'
 import {
   fathomConfig,
