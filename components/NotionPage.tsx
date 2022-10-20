@@ -241,10 +241,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
   if (block.type === 'page' && block.parent_table === 'collection') {
     comments = (
       <ReactUtterances
-        repo='transitive-bullshit/transitivebullsh.it'
+        repo='ankurpaulcoder/nooobcoder-blog'
         issueMap='issue-term'
         issueTerm='title'
-        label='blog'
+        label='blog-comment'
         theme='preferred-color-scheme'
       />
     )

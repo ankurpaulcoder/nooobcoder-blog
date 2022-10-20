@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: `A noob's blog`,
+  name: `Ankur Paul's blog`,
   domain: 'nooobcoder-blog.vercel.app',
   author: 'Ankur Paul',
 
@@ -17,7 +17,7 @@ export default siteConfig({
   description: 'Not so noob, kinda blogs 🧠',
 
   // social usernames (optional)
-  twitter: 'ankurpauldotdev',
+  twitter: 'hundredwpmcoder',
   github: 'nooobcoder',
   linkedin: 'ankur-paul-888b4411b',
   isSearchEnabled: true,
@@ -27,7 +27,7 @@ export default siteConfig({
   // page-specific values will override these site-wide defaults
   defaultPageIcon: null,
   defaultPageCover: null,
-  defaultPageCoverPosition: 0.5,
+  defaultPageCoverPosition: 0.8,
 
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
@@ -55,6 +55,6 @@ export default siteConfig({
     {
       title: 'About',
       pageId: '264a3bda6a4548748f8e472131ae9dc6'
-    },
+    }
   ]
 })

@@ -378,3 +378,30 @@
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
 }
+
+@media (min-width: 1300px) and (min-height: 300px) {
+  .notion-page-content-has-aside {
+    width: calc((100vw + var(--notion-max-width)) / 2 - 12px);
+  }
+}
+
+@media (min-width: 1300px) and (min-height: 300px) {
+  .notion-page-content-has-aside .notion-page-content-inner {
+    width: calc(var(--notion-max-width) - 24px);
+    max-width: calc(var(--notion-max-width) - 24px);
+  }
+}
+
+.notion-aside {
+  overflow-x: hidden;
+  padding-left: 24px; /* Adjust the space between the main content and the table of content here */
+}
+
+.notion-aside-table-of-contents {
+  max-width: 100%;
+}
+
+.notion-aside-table-of-contents .notion-table-of-contents-item-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
