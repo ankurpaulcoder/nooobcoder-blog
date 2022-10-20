@@ -245,7 +245,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         issueMap='issue-term'
         issueTerm='title'
         label='blog-comment'
-        theme='preferred-color-scheme'
+        theme='github-light'
       />
     )
   }
